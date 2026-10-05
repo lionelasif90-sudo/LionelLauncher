@@ -1,0 +1,2 @@
+- Grid Item Layout Type
+- Bug fixes and stability improvements

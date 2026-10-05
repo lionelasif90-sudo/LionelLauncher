@@ -1,0 +1,2 @@
+- Added Folder animation temporarily
+- Stability improvements

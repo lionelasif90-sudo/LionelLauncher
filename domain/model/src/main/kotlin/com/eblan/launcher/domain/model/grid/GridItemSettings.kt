@@ -1,0 +1,71 @@
+/*
+ *
+ *   Copyright 2023 Einstein Blanco
+ *
+ *   Licensed under the GNU General Public License v3.0 (the "License");
+ *   you may not use this file except in compliance with the License.
+ *   You may obtain a copy of the License at
+ *
+ *       https://www.gnu.org/licenses/gpl-3.0
+ *
+ *   Unless required by applicable law or agreed to in writing, software
+ *   distributed under the License is distributed on an "AS IS" BASIS,
+ *   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *   See the License for the specific language governing permissions and
+ *   limitations under the License.
+ *
+ */
+package com.eblan.launcher.domain.model.grid
+
+import com.eblan.launcher.domain.model.userdata.TextColor
+
+data class GridItemSettings(
+    val iconSize: Int,
+    val textColor: TextColor,
+    val textSize: Int,
+    val singleLineLabel: Boolean,
+    val horizontalAlignment: HorizontalAlignment,
+    val verticalArrangement: VerticalArrangement,
+    val customTextColor: Int,
+    val customBackgroundColor: Int,
+    val padding: Int,
+    val cornerRadius: Int,
+    val layoutType: LayoutType,
+    val horizontalArrangement: HorizontalArrangement,
+    val verticalAlignment: VerticalAlignment,
+    val iconPadding: Int,
+    val textPadding: Int,
+)
+
+enum class HorizontalAlignment {
+    Start,
+    CenterHorizontally,
+    End,
+}
+
+enum class VerticalArrangement {
+    Top,
+    Center,
+    Bottom,
+}
+
+enum class HorizontalArrangement {
+    Start,
+    Center,
+    End,
+}
+
+enum class VerticalAlignment {
+    Top,
+    CenterVertically,
+    Bottom,
+}
+
+enum class LayoutType {
+    TopIconBottomLabel,
+    TopLabelBottomIcon,
+    StartIconEndLabel,
+    StartLabelEndIcon,
+    IconOnly,
+    LabelOnly,
+}

@@ -1,0 +1,3 @@
+- Added multiple profiles
+- Removed shortcut screen
+- Optimized caching of application data
